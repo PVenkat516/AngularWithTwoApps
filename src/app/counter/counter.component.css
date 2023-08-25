@@ -1,0 +1,17 @@
+.counter {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .count {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  div{
+    margin-top: 40px;
+    margin-left: 50px;
+  }

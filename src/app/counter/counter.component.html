@@ -1,0 +1,12 @@
+<div class="d-grid gap-2 d-md-block">
+    
+    <button class="btn btn-primary mx-3" type="button" (click)="resetCounters()">Reset</button>
+    <button type="button" class="btn btn-primary mx-3" (click)="addCounter()">Add</button>
+  </div>
+  
+  <div *ngFor="let counter of counters; let i = index" class="counter-line">
+    <span type="button" class="btn btn-primary mx-2" > {{ counter.count }}</span>
+    <button type="button" class="btn btn-secondary mx-2" (click)="incrementCounter(i)">Increment</button>
+    <button type="button" class="btn btn-secondary mx-2" (click)="decrementCounter(i)">Decrement</button>
+    <button type="button" class="btn btn-danger mx-2"(click)="deleteCounter(i)">Delete</button>
+  </div>
